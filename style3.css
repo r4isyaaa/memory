@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 0 0 5px #444;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .item {
+    background-color: #2a2a2a;
+    border: 2px solid #444;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .item img,
+  .item video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #dddddd;
+    font-size: 1em;
+  }
+  
+  footer {
+    margin-top: 50px;
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  .qr-section {
+    margin-top: 40px;
+  }
+  
+  .qr-section h2 {
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  .music-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #222; /* hitam doff */
+    color: #f4f4f4; /* putih keabu-an biar gak terlalu kontras */
+    border: none;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, color 0.3s;
+  }
+  
+  .music-btn:hover {
+    background-color: #333;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  

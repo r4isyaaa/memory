@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scan QR untuk Masuk</title>
+  <link rel="stylesheet" href="style2.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Scan QR Code untuk Masuk</h1>
+  </header>
+
+  <section class="qr-section">
+    <h2>Gunakan kamera HP kamu</h2>
+    <canvas id="qr-code"></canvas>
+    <p>Atau klik <a href="index.html" style="color:#0ff">di sini</a> jika kamu tidak bisa scan</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kenangan Teman-Teman</p>
+  </footer>
+
+  <script>
+    const targetURL = window.location.origin + "/index.html";
+
+    QRCode.toCanvas(document.getElementById('qr-code'), targetURL, {
+      width: 220,
+      color: {
+        dark: "#ffffff",
+        light: "#1e1e1e"
+      }
+    });
+  </script>
+</body>
+</html>

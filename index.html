@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>memory with raisya</title>
+  <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+  <header>
+    <h1>PUTIH ABU ERA</h1>
+  </header>
+
+  <section class="gallery">
+    <div class="item">
+      <img src="praktek.jpg" alt="Foto kenangan 1"/>
+      <p>Praktek IPAS</p>
+    </div>
+    <div class="item">
+      <img src="prom night.jpg" alt="Foto kenangan 2"/>
+      <p>Reuni SMA</p>
+    </div>
+    <div class="item">
+      <img src="sidang.jpg" alt="Foto kenangan 2"/>
+      <p>SIDANG PKL</p>
+    </div>
+    <div class="item">
+      <img src="pkl.jpg" alt="Foto kenangan 2"/>
+      <p>PKL</p>
+    </div>
+    <div class="item">
+      <img src="putih abu.jpg" alt="Foto kenangan 2"/>
+      <p>Reuni SMA</p>
+    </div>
+    <div class="item">
+      <img src="pm.jpeg" alt="Foto kenangan 2"/>
+      <p>Reuni SMA</p>
+    </div>
+    <div class="item">
+      <img src="pbooth.jpeg" alt="Foto kenangan 2"/>
+      <p>Reuni SMA</p>
+    </div>
+    <div class="item">
+      <img src="ciwiw.jpeg" alt="Foto kenangan 2"/>
+      <p>Reuni SMA</p>
+    </div>
+    <div class="item">
+      <img src="yogya.jpg" alt="Foto kenangan 2"/>
+      <p>Reuni SMA</p>
+    </div>
+    <div class="item">
+      <video controls>
+        <source src="with adul.mp4" type="video/mp4"/>
+        Browser tidak mendukung video.
+      </video>
+      <p>now and forever we still together</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 raisya julia riani</p>
+  </footer>
+  <!-- Tombol Putar Musik -->
+<button id="playButton" class="music-btn">🎵 Putar Lagu Kenangan</button>
+
+<audio id="bgMusic" loop>
+  <source src="ramai sepi bersama.m4a" type="audio/mpeg" />
+  Browser tidak mendukung audio.
+</audio>
+
+<script>
+  const playButton = document.getElementById('playButton');
+  const bgMusic = document.getElementById('bgMusic');
+
+  playButton.addEventListener('click', function () {
+    bgMusic.play();
+    playButton.style.display = 'none'; // sembunyikan tombol setelah diklik
+  });
+</script>
+
+</body>
+</html>
